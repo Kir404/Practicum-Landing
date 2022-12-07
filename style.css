@@ -423,7 +423,7 @@ p {
    align-items: flex-start;
    align-content: flex-start;
    gap: 24px;
-   padding: 24px;
+   padding: 17px 17px 14px 17px;
    border: 1px solid #333333;
    border-radius: 32px; 
    margin: 0; 
@@ -431,6 +431,7 @@ p {
 
 .content__block h2 {
    color: #AADB6B;
+
 }
 
 .content__experience {
@@ -438,7 +439,6 @@ p {
    flex-direction: column;
    font-weight: 500;
    font-size: 17px;
-   gap: 8px;
    gap: 20px;
 }
 
@@ -461,12 +461,6 @@ a.exp_gray {
 .exp_dolg {
    margin-top: 6px;
    font-size: 13px;
-}
-
-.title__projects {
-   padding-left: 24px;
-   font-weight: 600;
-   font-size: 24px;
 }
 
 .projects {
@@ -510,7 +504,7 @@ a.exp_gray {
 }
 
 .project__about {
-   width: 100%;
+   /* width: 100%; */
    position: absolute;
    bottom: 20px;
    right: 21px;
@@ -519,15 +513,14 @@ a.exp_gray {
 }
 
 .proj__btn {
-   padding: 11.7911px 9.17087px;
+   padding: 10px 10px;
    border: 0.6px solid #333333;
    border-radius: 11px;
    cursor: pointer;
    box-sizing: border-box;
    display: flex;
-   gap: 5px;
+   gap: 9px;
    align-items: center;
-   font-family: inherit;
    font-weight: 600;
    font-size: 11.7911px;
    background-color: transparent;
@@ -544,6 +537,7 @@ a.exp_gray {
    display: flex;
    justify-content: space-between;
    align-items: center;
+   /* gap: 80px; */
    margin: 0;
    background-color: #140E17;
    border: 2px solid #333333;
@@ -557,7 +551,7 @@ a.exp_gray {
    flex-direction: row;
    align-items: center;
    padding: 0px;
-   gap: 10px;
+   /* gap: 10px; */
 }
 
 .photo {
@@ -565,7 +559,7 @@ a.exp_gray {
    height: 182.58px;
    border-radius: 50%;
    flex: none;
-   margin-right: 80px;
+   /* margin-right: 80px; */
 }
 
 .header__content {
@@ -598,8 +592,7 @@ a.exp_gray {
    line-height: 28px;
 }
 
-.link__btn {
-   
+.link__btn { 
    width: 105.89px;
    cursor: pointer;
    box-sizing: border-box;
@@ -660,7 +653,6 @@ a.exp_gray {
 .text-btn:hover {
    background-color: var(--purple);
    color: #000000;
-
 }
 /* End Screenshots block */
 
@@ -763,4 +755,254 @@ a.exp_gray {
       width: 100%;
       max-width: inherit;
    }
+}
+
+/* screenshots to tablet  */
+@media screen and (max-width: 768px) {
+   /* Start head CV block */
+   .header__wrapper {
+      width: 473.76px;
+      height: 173.52px;
+      padding: 21px 52px;
+      border: 1.44px solid #333333;
+      border-radius: 17.1378px;
+      /* gap: 57px; */
+   }
+
+   .photo {
+      width: 131.45px;
+      height: 131.45px;
+   }
+
+   .header__content {
+      margin: 0;
+      gap: 21px;
+   }
+
+   .header__content-text {
+      gap: 7px;
+   }
+
+   .header__title {
+      font-size: 22px;
+   }
+
+   .header__subtitle {
+      font-size: 8px;
+      line-height: 9px;
+   }
+
+   .link__btn { 
+      width: 76px;
+      height: 19.83px;
+      padding: 5.92px 0 5.92px 12px; 
+      border-radius: 6px;
+      font-size: 6px;
+   }
+
+   .logo-btn {
+      width: 7.9px;
+      height: 7.9px;
+   }
+   /* End head CV block */
+
+   /* Start experience block */
+   .content__block {
+      width: 392px;
+      padding: 12px 12px 4px 12px;
+      border-radius: 17.2484px;
+      gap: 17.25px;
+   }
+
+   .content__block h2 {
+      font-size: 13px;
+   }
+
+   .content__experience {
+      font-size: 13px;
+      gap: 15px;
+   }
+
+
+   a.exp_gray {
+      font-size: 9.7px;
+   }
+   
+   .exp_gray {
+      font-size: 9.7px;
+   }
+   
+   .exp_dolg {
+      margin-top: 4.3px;
+      font-size: 9.7px;
+   }
+   /* End experience block */
+
+   /* Start project block */
+   .projects {
+      border-radius: 15px;
+      max-width: 158px;
+      height: 309px;
+      gap: 11px;
+      padding: 15px;
+   }
+   
+   .logo__project {
+      max-width: 122px;
+      max-height: 122px;
+   }
+   
+   .project__info {
+      gap: 8.5px;
+      font-size: 8.5px;
+   }
+   
+   .title__inside {
+      font-size: 20px;
+   }
+   
+   .project__about {
+      bottom: 13px;
+      right: 15px;
+   }
+   
+   .proj__btn {
+      padding: 8px 7.6px;
+      border: 0.5px solid #333333;
+      border-radius: 8.5px;
+      gap: 6px;
+      font-size: 8.5px;
+   }
+
+   .proj_btn-logo{
+      width: 11.32px;
+      height: 11.32px;
+   }
+   /* End project block */
+}
+
+
+/* screenshots to phone  */
+@media screen and (max-width: 425px) {
+   /* Start head CV block */
+   .header__wrapper {
+      width: 220px;
+      height: 80px;
+      padding: 10px 24px;
+      border-radius: 8px;
+      border: 0.67px solid #333333;
+   }
+
+   .photo {
+      width: 61px;
+      height: 61px;
+      /* margin-right: 26px; */
+   }
+
+   .header__content {
+      gap: 8px;
+   }
+
+   .header__content-text {
+      gap: 3px;
+   }
+
+   .header__title {
+      font-size: 10px;
+   }
+
+   .header__subtitle {
+      font-size: 3.6px;
+      line-height: 4px;
+   }
+
+   .link__btn { 
+      width: 35px;
+      height: 9.5px;
+      padding: 2.75px 3px 2.75px 6px; 
+      border-radius: 2.7px;
+      font-size: 3px;
+   }
+
+   .logo-btn {
+      width: 3.6px;
+      height: 3.6px;
+   }
+   /* End head CV block */
+
+   /* Start experience block */
+   .content__block {
+      width: 185px;
+      height: 108px;
+      padding: 6px 6px 1px 6px;
+      border: 0.25079px solid #333333;
+      border-radius: 8.02528px;
+      gap: 8px;
+   }
+
+   .content__block h2 {
+      font-size: 6px;
+   }
+
+   .content__experience {
+      font-size: 6px;
+      gap: 7px;
+   }
+
+
+   a.exp_gray {
+      font-size: 4.5px;
+   }
+   
+   .exp_gray {
+      font-size: 4.5px;
+   }
+   
+   .exp_dolg {
+      margin-top: 2px;
+      font-size: 4.5px;
+   }
+   /* End experience block */
+
+   /* Start project block */
+   .projects {
+      border-radius: 7px;
+      max-width: 73px;
+      height: 144px;
+      gap: 5px;
+      padding: 7px;
+   }
+   
+   .logo__project {
+      max-width: 59px;
+      max-height: 59px;
+   }
+   
+   .project__info {
+      gap: 4px;
+      font-size: 4px;
+   }
+   
+   .title__inside {
+      font-size: 9px;
+   }
+   
+   .project__about {
+      bottom: 6.64px;
+      right: 7.02px;
+   }
+   
+   .proj__btn {
+      padding: 4px 4px;
+      border: 0.219446px solid #333333;
+      border-radius: 3.95002px;
+      gap: 2px;
+      font-size: 4px;
+   }
+
+   .proj_btn-logo{
+      width: 5.27px;
+      height: 5.27px;
+   }
+   /* End project block */
 }
