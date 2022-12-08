@@ -9,7 +9,6 @@
 * {
    font-family: 'Manrope', sans-serif;
    margin: 0;
-   /* padding: 0; */
 } 
 
 body {
@@ -339,7 +338,6 @@ p {
    background-color: var(--purple);
    justify-content: space-evenly;
    align-items: center;
-   /* align-content: space-around; */
    gap: 8px;
    padding: 18px 14px;
    cursor: pointer;
@@ -353,13 +351,11 @@ p {
    flex-wrap: wrap;
    gap: 24px;
    max-width: inherit;
-   /* flex: 1 1 0; */
 }
 
 .feature_card {
    box-sizing: border-box;
    max-width: 317px;
-   /* width: 100%; */
    display: flex;
    flex-direction: column;
    padding: 32px;
@@ -431,7 +427,6 @@ p {
 
 .content__block h2 {
    color: #AADB6B;
-
 }
 
 .content__experience {
@@ -504,7 +499,6 @@ a.exp_gray {
 }
 
 .project__about {
-   /* width: 100%; */
    position: absolute;
    bottom: 20px;
    right: 21px;
@@ -537,7 +531,6 @@ a.exp_gray {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   /* gap: 80px; */
    margin: 0;
    background-color: #140E17;
    border: 2px solid #333333;
@@ -551,7 +544,6 @@ a.exp_gray {
    flex-direction: row;
    align-items: center;
    padding: 0px;
-   /* gap: 10px; */
 }
 
 .photo {
@@ -559,7 +551,6 @@ a.exp_gray {
    height: 182.58px;
    border-radius: 50%;
    flex: none;
-   /* margin-right: 80px; */
 }
 
 .header__content {
@@ -600,7 +591,6 @@ a.exp_gray {
    justify-content: space-around;
    align-items: center;
    align-content: center;
-   /* margin-top: 64px; */
    padding: 8px 8px 8px 21px; 
    background: #D4D3FB;
    border-radius: 8px;
@@ -766,7 +756,6 @@ a.exp_gray {
       padding: 21px 52px;
       border: 1.44px solid #333333;
       border-radius: 17.1378px;
-      /* gap: 57px; */
    }
 
    .photo {
@@ -896,7 +885,6 @@ a.exp_gray {
    .photo {
       width: 61px;
       height: 61px;
-      /* margin-right: 26px; */
    }
 
    .header__content {
