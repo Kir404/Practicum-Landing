@@ -647,7 +647,7 @@ a.exp_gray {
 /* End Screenshots block */
 
 /* Start Price block */
-.price-block {
+.page-block {
    display: flex;
    flex-direction: column;
    gap: 32px;
@@ -759,6 +759,43 @@ a.exp_gray {
 }
 /* End Price block */
 
+/* Start FAQ block */
+.faq-cards {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.page-block>.text_block {
+   
+}
+
+.faq__question {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.faq__question>.btn_block {
+   z-index: 2;
+}
+
+.faq__btn {
+   cursor: pointer;
+}
+
+.faq__inner {
+   display: flex;
+   flex-direction: column;
+   gap: 26px;
+   font-weight: 500;
+   font-size: 18px;
+   color: var(--gray);
+}
+
+
+
+/* End FAQ block */
 
 /* to phone */
 @media screen and (max-width: 610px) {
