@@ -945,10 +945,6 @@ a.exp_gray {
       opacity: 0.2;
    }
 
-   .footer-socials,
-   .footer-column {
-      max-width: 352px;
-   }
 }
 
 @media screen and (min-width: 860px) {
@@ -1085,6 +1081,12 @@ a.exp_gray {
       height: 11.32px;
    }
    /* End project block */
+
+   
+   /* .footer-socials,
+   .footer-column {
+      max-width: 352px;
+   } */
 }
 
 /* screenshots to phone  */
