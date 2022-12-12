@@ -5,10 +5,12 @@ const body = document.querySelector('#dropdown-btn');
 const hero = document.querySelector('#hero');
 const imgBurger = document.querySelector('#burger-btn');
 const imgBurgerClose = document.querySelector('#burger-close');
+const feature = document.querySelector('.features_block');
 
 burgerBtn.addEventListener('click', () => {
    dropDown.classList.toggle('hide');
    hero.classList.toggle('blur');
+   feature.classList.toggle('blur');
    imgBurger.classList.toggle('hide');
    imgBurgerClose.classList.toggle('hide');
 })
