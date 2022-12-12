@@ -58,7 +58,7 @@ p {
 
 /* Header */
 .header {
-   margin-bottom: 80px;
+   /* margin-bottom: 80px; */
 }
 
 .header_block {
@@ -72,6 +72,7 @@ p {
    font-size: 20px;
    border: 1px solid #000000;
    margin: 0;
+   box-sizing: border-box;
 }
 
 .header_logo__block {
