@@ -791,8 +791,65 @@ a.exp_gray {
    font-size: 18px;
    color: var(--gray);
 }
-
 /* End FAQ block */
+
+/* Start Footer */
+.footer {
+   padding: 60px 0;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 24px;
+   color: #fff;
+}
+
+.footer-socials {
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+   max-width: 232px;
+   width: 100%;
+}
+
+.footer-logo {
+   display: flex;
+   align-items: center;
+   gap: 4px;
+}
+
+.footer-logo .logo-text {
+   color: #fff;
+}
+
+.footer-links {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+
+.footer-column {
+   display: flex;
+   flex-direction: column;
+   max-width: 232px;
+   width: 100%;
+   gap: 20px;
+   font-weight: 500;
+   font-size: 20px;
+}
+/* End Footer */
+
+.feedback-btn{
+   display: flex;
+   align-items: flex-end;
+   padding: 16px;
+   box-sizing: border-box;
+   background: var(--purple);
+   border: 1px solid #333333;
+   border-radius: 99px;
+   max-width: 56px;
+   margin: 20px 0 0 auto;
+   cursor: pointer;
+}
 
 /* to phone */
 @media screen and (max-width: 610px) {
@@ -886,6 +943,11 @@ a.exp_gray {
 @media screen and (max-width: 960px) {
    div.hero_right {
       opacity: 0.2;
+   }
+
+   .footer-socials,
+   .footer-column {
+      max-width: 352px;
    }
 }
 
@@ -1147,4 +1209,9 @@ a.exp_gray {
       height: 5.27px;
    }
    /* End project block */
+
+   .footer-socials,
+   .footer-column {
+      max-width: 352px;
+   }
 }

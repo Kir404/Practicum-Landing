@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="styleForm.css">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"> -->
+</head>
+
+  <body>
+    <main>
+      <div class="wrapper main">
+
+        <div class="wrapper header">
+          <img src="../img/smile purple.svg" alt="" class="smile">
+        </div>
+
+        <form action="./success.html" method="get" class="wrapper feedback">
+
+        <div class="wrapper titles">
+          <h1 class="title">Обратная связь</h1>
+          <h2 class="subtitle">Напиши свое сообщение, и мы постараемся дать ответ в самое ближайщее время</h2>  
+        </div>
+
+        <fieldset class="wrapper inputs">
+
+          <div class="input-block">
+            <input class="form_element" type="text" placeholder="Ваше имя" id="input">
+            <img src="../img/clearInput.svg" class="logo-clear hidden" id="logo-clear">
+          </div> 
+
+          <!-- <select class="form_element">
+            <option disabled selected style='display:none;'>Тема обращения</option>
+            <option value="">Предложение о трудоустройстве</option>
+            <option value="">Сотрудничество</option>
+            <option value="">Уточнение данных</option>
+          </select> -->
+        <!-- Стилизуемый селект -->
+          <div class="select_custom">
+            <button class="dropdown_btn" type="button" id="dropdown_btn">
+              <span id="select-text">Тема обращения </span>
+              <img src="../img/select.svg" class="logo-select">
+            </button>
+           
+            <ul class="dropdown_list hidden" id="dropdowm-list">
+              <li class="dropdown_list-item" data-value="offer">Предложение о трудоустройстве</li>
+              <li class="dropdown_list-item" data-value="collaboration">Сотрудничество</li>
+              <li class="dropdown_list-item" data-value="question">Уточнение данных</li>
+            </ul>
+            <input type="text" name="select-item" class="dropdowm-input-hidden">
+          </div>
+        <!-- /Select -->
+
+          <div class="input-block">
+            <textarea class="form_element textarea" id="input" cols="10" rows="3" placeholder="Текст сообщения"></textarea>
+            <img src="../img/clearInput.svg" class="logo-clear hidden" id="logo-clear">
+          </div>
+        </fieldset>
+        
+        <div class="wrapper_btn">
+          <button type="submit" class="form_element btn" id="send-btn">
+            <div class="link_btn" id="link-btn">
+              <h4>Отправить</h4> 
+              <img  id="logo-btn" src="../img/ok.svg" alt="logo" style="width: 24px; height: 24px">
+            </div>           
+          </button>
+        </div>
+ 
+      </form>
+    </main>
+    <script src="script.js"></script> 
+  </body>
+</html>

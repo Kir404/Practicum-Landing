@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap');
+body {
+   background-color: #140E17;
+   color: #fff;
+   font-family: 'Manrope', sans-serif;
+   margin: 0;
+}
+h1, h2, h4 {
+   margin: 0;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 18px;
+   flex: 0 1 auto;
+}
+
+.wrapper.header {
+   box-sizing: border-box;
+}
+
+.wrapper.main {
+   padding: 32px;
+   border: 1px solid #D4D3FB;
+   border-radius: 32px;
+   max-width: 1000px;
+   margin: 64px auto;
+   gap: 24px;
+}
+
+.smile {
+   width: 80px;
+   height: 80px;
+}
+
+.wrapper.feedback {
+   border: none;
+   gap: 24px;
+   max-width: 456px;
+}
+
+.wrapper.titles {
+   border: none;
+}
+
+.title {
+   font-weight: 700;
+   font-size: 42px;
+}
+
+.subtitle {
+   font-weight: 500;
+   font-size: 18px;
+}
+
+.wrapper.inputs {
+   border: none;
+   padding: 0;
+   margin: 0;
+   width: 100%;
+}
+
+.input-block {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+}
+
+.logo-clear {
+   cursor: pointer;
+   position: absolute;
+   top: 18px;
+   right: 14px;
+   transition: ease-in-out 0.3s;
+}
+
+.form_element {
+   box-sizing: border-box;
+   padding: 18px 14px;
+   background: #FFFFFF;
+   border-radius: 18px;
+   width: 100%;
+   font-family: inherit;
+   font-weight: 600;
+   font-size: 18px;
+   color: #76757B;
+
+/* убираем базовые стили от браузера */
+   appearance: none;
+   -webkit-appearance: none;
+   -ms-appearance: none;
+   -moz-appearance: none;
+   outline: none;
+   box-shadow: none;
+   border: 0;
+}
+
+.textarea {
+   resize: none;
+}
+
+.wrapper_btn {  
+   display: flex;
+}
+
+.form_element.btn {
+   cursor: pointer;
+   background-color: transparent;
+   border: 1px solid #333333;
+   color: #fff;
+}
+
+.form_element:focus {
+   color: black;
+   border: 2px solid #0A84FF;
+   caret-color: #0A84FF;
+}
+
+select:focus {
+   color: #76757B !important;
+}
+
+.link_btn {
+   box-sizing: border-box;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   align-content: space-around;
+   gap: 16px;
+   padding-left: 16px;
+}
+
+.btn:hover {
+   background-color: #D4D3FB;
+   color: black;
+   transition: all .3s ease;
+}
+
+.btn:focus {
+   background-color: #D4D3FB;
+   color: black;
+   transition: all .3s ease; 
+   border: none;  
+}
+
+fieldset.hidden {
+   overflow: hidden;
+}
+
+/* Стилизуемый селект */
+.select_custom {
+   position: relative;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.dropdown_btn {
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   cursor: pointer;
+   
+   padding: 18px 14px;
+   background: #FFFFFF;
+   border-radius: 18px;
+   width: 100%;
+   font-family: inherit;
+   font-weight: 600;
+   font-size: 18px;
+   color: #76757B;
+   outline: none;
+   box-shadow: none;
+   border: 0;
+}
+
+#select-text {
+   pointer-events: none;
+}
+
+.logo-select {
+   pointer-events: none;
+}
+
+/* .dropdown_btn:after {
+   display: block;
+   width: 24px;
+   height: 24px;
+   transition: all .3s ease;
+} */
+
+/* Добавляемый класс при открытии */
+.open {
+   border: 2px solid #0A84FF;
+}
+
+.logo-select {
+   transition: all .3s ease;
+}
+
+.rotate {
+   transform: rotate(180deg);
+}
+
+.dropdown_list {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 18px 14px;
+   list-style-type: none;
+   width: 100%;
+   background: #FFFFFF;
+   border-radius: 0  0 18px 18px;
+   color: #76757B;
+   padding-top: 25px;
+   top: -18px;
+   border-bottom: 2px solid #0A84FF;
+   border-right: 2px solid #0A84FF;
+   border-left: 2px solid #0A84FF;
+   z-index: 0;
+}
+
+.hidden {
+   display: none;
+   z-index: 1;
+}
+
+.dropdown_list-item {
+   margin: 0;
+   padding: 0;
+   font-size: 18px;
+   font-weight: 600;
+   border-bottom: 1px solid #EBEBEB;
+}
+
+/* works */
+.dropdown_list-item:hover{
+   color: #0A84FF;
+   cursor: pointer;
+}
+
+.dropdowm-input-hidden {
+   display: none;
+}
