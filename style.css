@@ -407,12 +407,15 @@ p {
 .screenshots_samples {
    position: relative;
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
    align-items: flex-end;
+   gap: 40px;
+   padding: 0 30px;
 }
 
 .content__block { 
-   width: 545px;
+   max-width: 545px;
+   width: 100%;
    box-sizing: border-box;
    display: flex;
    flex-direction: column;
@@ -464,7 +467,8 @@ a.exp_gray {
    border-radius: 20.962px;
    color: #000000;
    max-width: 220px;
-   height: 430px;
+   max-height: 430px;
+   height: 100%;
    display: flex;
    align-items: center;
    gap: 25px;
@@ -499,26 +503,26 @@ a.exp_gray {
 }
 
 .project__about {
-   position: absolute;
-   bottom: 20px;
-   right: 21px;
    display: flex;
    justify-content: flex-end;
+   width: 100%;
 }
 
 .proj__btn {
+   display: flex;
+   justify-content: flex-end;
    padding: 10px 10px;
    border: 0.6px solid #333333;
    border-radius: 11px;
    cursor: pointer;
    box-sizing: border-box;
-   display: flex;
    gap: 9px;
-   align-items: center;
    font-weight: 600;
    font-size: 11.7911px;
    background-color: transparent;
    color: #000000;
+
+   outline: none !important;
 }
 
 .header__wrapper {
@@ -585,7 +589,8 @@ a.exp_gray {
 }
 
 .link__btn { 
-   width: 105.89px;
+   max-width: 105.89px;
+   width: 100%;
    cursor: pointer;
    box-sizing: border-box;
    display: flex;
@@ -720,7 +725,6 @@ a.exp_gray {
    justify-content: flex-start;
 }
 
-
 .black {
    background: #000000;
    box-sizing: border-box;
@@ -749,7 +753,6 @@ a.exp_gray {
    line-height: 22px;
    max-width: 150px;
    width: 100%;
-   /* height: 50px; */
    right: 32px;
    top: -25px;
    background: #000000;
@@ -764,10 +767,6 @@ a.exp_gray {
    display: flex;
    flex-direction: column;
    gap: 10px;
-}
-
-.page-block>.text_block {
-   
 }
 
 .faq__question {
@@ -792,8 +791,6 @@ a.exp_gray {
    font-size: 18px;
    color: var(--gray);
 }
-
-
 
 /* End FAQ block */
 
@@ -909,16 +906,16 @@ a.exp_gray {
 @media screen and (max-width: 768px) {
    /* Start head CV block */
    .header__wrapper {
-      width: 473.76px;
-      height: 173.52px;
+      max-width: 473.76px;
+      max-height: 173.52px;
       padding: 21px 52px;
       border: 1.44px solid #333333;
       border-radius: 17.1378px;
    }
 
    .photo {
-      width: 131.45px;
-      height: 131.45px;
+      max-width: 131.45px;
+      max-height: 131.45px;
    }
 
    .header__content {
@@ -955,7 +952,7 @@ a.exp_gray {
 
    /* Start experience block */
    .content__block {
-      width: 392px;
+      /* width: 392px; */
       padding: 12px 12px 4px 12px;
       border-radius: 17.2484px;
       gap: 17.25px;
@@ -988,8 +985,8 @@ a.exp_gray {
    /* Start project block */
    .projects {
       border-radius: 15px;
-      max-width: 158px;
-      height: 309px;
+      /* max-width: 158px; */
+      /* height: 309px; */
       gap: 11px;
       padding: 15px;
    }
@@ -1029,11 +1026,11 @@ a.exp_gray {
 }
 
 /* screenshots to phone  */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 480px) {
    /* Start head CV block */
    .header__wrapper {
-      width: 220px;
-      height: 80px;
+      max-width: 220px;
+      max-height: 80px;
       padding: 10px 24px;
       border-radius: 8px;
       border: 0.67px solid #333333;
@@ -1077,8 +1074,8 @@ a.exp_gray {
 
    /* Start experience block */
    .content__block {
-      width: 185px;
-      height: 108px;
+      max-width: 185px;
+      /* height: 108px; */
       padding: 6px 6px 1px 6px;
       border: 0.25079px solid #333333;
       border-radius: 8.02528px;
@@ -1093,7 +1090,6 @@ a.exp_gray {
       font-size: 6px;
       gap: 7px;
    }
-
 
    a.exp_gray {
       font-size: 4.5px;
@@ -1113,7 +1109,7 @@ a.exp_gray {
    .projects {
       border-radius: 7px;
       max-width: 73px;
-      height: 144px;
+      max-height: 144px;
       gap: 5px;
       padding: 7px;
    }
@@ -1139,6 +1135,7 @@ a.exp_gray {
    
    .proj__btn {
       padding: 4px 4px;
+      box-sizing: border-box;
       border: 0.219446px solid #333333;
       border-radius: 3.95002px;
       gap: 2px;
