@@ -9,7 +9,6 @@
 * {
    font-family: 'Manrope', sans-serif;
    margin: 0;
-   /* padding: 0; */
 } 
 
 body {
@@ -35,12 +34,18 @@ ul {
    padding: 0;
 }
 
+li {
+   list-style-type: none;
+   word-wrap: break-word;
+  }
+
 h1, h2, h3, h4 {
    margin: 0;
 }
 
 p {
    margin: 0;
+   word-wrap: break-word;
 }
 
 .blur {
@@ -52,10 +57,6 @@ p {
 }
 
 /* Header */
-.header {
-   margin-bottom: 80px;
-}
-
 .header_block {
    position: relative;
    padding: 18px 24px;
@@ -339,7 +340,6 @@ p {
    background-color: var(--purple);
    justify-content: space-evenly;
    align-items: center;
-   /* align-content: space-around; */
    gap: 8px;
    padding: 18px 14px;
    cursor: pointer;
@@ -351,27 +351,20 @@ p {
    box-sizing: border-box;
    display: flex;
    flex-wrap: wrap;
+   justify-content: space-between;
    gap: 24px;
    max-width: inherit;
-   /* flex: 1 1 0; */
 }
 
 .feature_card {
    box-sizing: border-box;
    max-width: 317px;
-   /* width: 100%; */
    display: flex;
    flex-direction: column;
    padding: 32px;
    gap: 24px;
    border: 1px solid var(--purple);
    border-radius: 32px;
-   flex: 0 1 auto;
-}
-
-.feature_card:last-child {
-   display: flex;
-   gap: 0;
 }
 
 .card_text {
@@ -400,7 +393,6 @@ p {
    font-size: 18px;
 }
 
-
 /* Screenshots block */
 .screenshots_block {
    display: flex;
@@ -411,12 +403,15 @@ p {
 .screenshots_samples {
    position: relative;
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
    align-items: flex-end;
+   gap: 40px;
+   padding: 0 30px;
 }
 
 .content__block { 
-   width: 545px;
+   max-width: 545px;
+   width: 100%;
    box-sizing: border-box;
    display: flex;
    flex-direction: column;
@@ -431,7 +426,6 @@ p {
 
 .content__block h2 {
    color: #AADB6B;
-
 }
 
 .content__experience {
@@ -469,7 +463,8 @@ a.exp_gray {
    border-radius: 20.962px;
    color: #000000;
    max-width: 220px;
-   height: 430px;
+   max-height: 430px;
+   height: 100%;
    display: flex;
    align-items: center;
    gap: 25px;
@@ -504,27 +499,26 @@ a.exp_gray {
 }
 
 .project__about {
-   /* width: 100%; */
-   position: absolute;
-   bottom: 20px;
-   right: 21px;
    display: flex;
    justify-content: flex-end;
+   width: 100%;
 }
 
 .proj__btn {
+   display: flex;
+   justify-content: flex-end;
    padding: 10px 10px;
    border: 0.6px solid #333333;
    border-radius: 11px;
    cursor: pointer;
    box-sizing: border-box;
-   display: flex;
    gap: 9px;
-   align-items: center;
    font-weight: 600;
    font-size: 11.7911px;
    background-color: transparent;
    color: #000000;
+
+   outline: none !important;
 }
 
 .header__wrapper {
@@ -537,7 +531,6 @@ a.exp_gray {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   /* gap: 80px; */
    margin: 0;
    background-color: #140E17;
    border: 2px solid #333333;
@@ -551,7 +544,6 @@ a.exp_gray {
    flex-direction: row;
    align-items: center;
    padding: 0px;
-   /* gap: 10px; */
 }
 
 .photo {
@@ -559,7 +551,6 @@ a.exp_gray {
    height: 182.58px;
    border-radius: 50%;
    flex: none;
-   /* margin-right: 80px; */
 }
 
 .header__content {
@@ -567,6 +558,7 @@ a.exp_gray {
    display: flex;
    flex-direction: column;
    align-items: flex-start;
+   font-family: inherit;
    margin: 27px 0;
    padding: 0px;
    gap: 29px;
@@ -593,14 +585,14 @@ a.exp_gray {
 }
 
 .link__btn { 
-   width: 105.89px;
+   max-width: 105.89px;
+   width: 100%;
    cursor: pointer;
    box-sizing: border-box;
    display: flex;
    justify-content: space-around;
    align-items: center;
    align-content: center;
-   /* margin-top: 64px; */
    padding: 8px 8px 8px 21px; 
    background: #D4D3FB;
    border-radius: 8px;
@@ -616,7 +608,7 @@ a.exp_gray {
    height: 10.95px;
 }
 
-.screenshots_text {
+.text_block {
    padding: 24px;
    position: static;
    display: flex;
@@ -647,7 +639,6 @@ a.exp_gray {
    font-size: 18px;
    cursor: pointer;
    transition: all .3s ease;
-
 }
 
 .text-btn:hover {
@@ -655,6 +646,206 @@ a.exp_gray {
    color: #000000;
 }
 /* End Screenshots block */
+
+/* Start Price block */
+.page-block {
+   display: flex;
+   flex-direction: column;
+   gap: 32px;
+}
+
+.block__title {
+   font-weight: 600;
+   font-size: 24px;
+   color: var(--purple);   
+}
+
+.price-list {
+   display: flex;
+   justify-content: space-between;
+   gap: 32px;
+}
+
+.price-card {
+   padding: 32px;
+   width: 50%;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 24px;
+   background-color: var(--purple);
+   border-radius: 32px;
+   color: #000000;
+   flex: 1 1 auto;
+}
+
+.card-content {
+   display: flex;
+   flex-direction: column;
+   gap: 18px; 
+   font-weight: 400;
+   font-size: 17px;
+}
+
+.card-content h4 {
+   font-weight: 600;
+   font-size: 24px;
+}
+
+.price-value {
+   font-weight: 800;
+   font-size: 68px;
+   line-height: 110%;
+}
+
+.price-mounth {
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 33px;
+}
+
+.list {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+}
+
+.list-item {
+   display: flex;
+   align-items: flex-start;
+   gap: 4px;
+}
+
+.left {
+   justify-content: flex-start;
+}
+
+.black {
+   background: #000000;
+   box-sizing: border-box;
+   max-width: 201px;
+   width: 100%;
+}
+
+.black:hover {
+   background: #333333;
+   color: #fff;
+}
+
+.premium { 
+   position: relative;
+}
+
+.tag {
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-sizing: border-box;
+   padding: 14px;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 22px;
+   max-width: 150px;
+   width: 100%;
+   right: 32px;
+   top: -25px;
+   background: #000000;
+   border: 1px solid #333333;
+   border-radius: 18px;
+   color: #fff;
+}
+/* End Price block */
+
+/* Start FAQ block */
+.faq-cards {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.faq__question {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.faq__question>.btn_block {
+   z-index: 2;
+}
+
+.faq__btn {
+   cursor: pointer;
+}
+
+.faq__inner {
+   display: flex;
+   flex-direction: column;
+   gap: 26px;
+   font-weight: 500;
+   font-size: 18px;
+   color: var(--gray);
+}
+/* End FAQ block */
+
+/* Start Footer */
+.footer {
+   padding: 60px 0;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 24px;
+   color: #fff;
+}
+
+.footer-socials {
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+   max-width: 232px;
+   width: 100%;
+}
+
+.footer-logo {
+   display: flex;
+   align-items: center;
+   gap: 4px;
+}
+
+.footer-logo .logo-text {
+   color: #fff;
+}
+
+.footer-links {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+
+.footer-column {
+   display: flex;
+   flex-direction: column;
+   max-width: 232px;
+   width: 100%;
+   gap: 20px;
+   font-weight: 500;
+   font-size: 20px;
+}
+/* End Footer */
+
+.feedback-btn{
+   display: flex;
+   align-items: flex-end;
+   padding: 16px;
+   box-sizing: border-box;
+   background: var(--purple);
+   border: 1px solid #333333;
+   border-radius: 99px;
+   max-width: 56px;
+   margin: 20px 0 0 auto;
+   cursor: pointer;
+}
 
 /* to phone */
 @media screen and (max-width: 610px) {
@@ -709,6 +900,13 @@ a.exp_gray {
    }
 }
 
+/* Price card to phone*/
+@media screen and (max-width: 660px) {
+   .price-list {
+      flex-wrap: wrap;
+   } 
+}
+
  /* to tablet */
 @media screen and (min-width: 320px) and (max-width: 860px) {
    main {
@@ -742,6 +940,11 @@ a.exp_gray {
    div.hero_right {
       opacity: 0.2;
    }
+
+   .footer-socials,
+   .footer-column {
+      max-width: 352px;
+   }
 }
 
 @media screen and (min-width: 860px) {
@@ -761,17 +964,16 @@ a.exp_gray {
 @media screen and (max-width: 768px) {
    /* Start head CV block */
    .header__wrapper {
-      width: 473.76px;
-      height: 173.52px;
+      max-width: 473.76px;
+      max-height: 173.52px;
       padding: 21px 52px;
       border: 1.44px solid #333333;
       border-radius: 17.1378px;
-      /* gap: 57px; */
    }
 
    .photo {
-      width: 131.45px;
-      height: 131.45px;
+      max-width: 131.45px;
+      max-height: 131.45px;
    }
 
    .header__content {
@@ -808,7 +1010,7 @@ a.exp_gray {
 
    /* Start experience block */
    .content__block {
-      width: 392px;
+      /* width: 392px; */
       padding: 12px 12px 4px 12px;
       border-radius: 17.2484px;
       gap: 17.25px;
@@ -841,8 +1043,8 @@ a.exp_gray {
    /* Start project block */
    .projects {
       border-radius: 15px;
-      max-width: 158px;
-      height: 309px;
+      /* max-width: 158px; */
+      /* height: 309px; */
       gap: 11px;
       padding: 15px;
    }
@@ -881,13 +1083,12 @@ a.exp_gray {
    /* End project block */
 }
 
-
 /* screenshots to phone  */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 480px) {
    /* Start head CV block */
    .header__wrapper {
-      width: 220px;
-      height: 80px;
+      max-width: 220px;
+      max-height: 80px;
       padding: 10px 24px;
       border-radius: 8px;
       border: 0.67px solid #333333;
@@ -896,7 +1097,6 @@ a.exp_gray {
    .photo {
       width: 61px;
       height: 61px;
-      /* margin-right: 26px; */
    }
 
    .header__content {
@@ -932,8 +1132,8 @@ a.exp_gray {
 
    /* Start experience block */
    .content__block {
-      width: 185px;
-      height: 108px;
+      max-width: 185px;
+      /* height: 108px; */
       padding: 6px 6px 1px 6px;
       border: 0.25079px solid #333333;
       border-radius: 8.02528px;
@@ -948,7 +1148,6 @@ a.exp_gray {
       font-size: 6px;
       gap: 7px;
    }
-
 
    a.exp_gray {
       font-size: 4.5px;
@@ -968,7 +1167,7 @@ a.exp_gray {
    .projects {
       border-radius: 7px;
       max-width: 73px;
-      height: 144px;
+      max-height: 144px;
       gap: 5px;
       padding: 7px;
    }
@@ -994,6 +1193,7 @@ a.exp_gray {
    
    .proj__btn {
       padding: 4px 4px;
+      box-sizing: border-box;
       border: 0.219446px solid #333333;
       border-radius: 3.95002px;
       gap: 2px;
@@ -1005,4 +1205,9 @@ a.exp_gray {
       height: 5.27px;
    }
    /* End project block */
+
+   .footer-socials,
+   .footer-column {
+      max-width: 352px;
+   }
 }

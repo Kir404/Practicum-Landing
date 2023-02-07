@@ -12,3 +12,17 @@ burgerBtn.addEventListener('click', () => {
    imgBurger.classList.toggle('hide');
    imgBurgerClose.classList.toggle('hide');
 })
+
+//функция для работы с несколькими блоками FAQ
+document.querySelectorAll('#faq-block').forEach(function(faqWrapper){
+const faqBtn = faqWrapper.querySelector('#faq-btn');
+const faqInner = faqWrapper.querySelector('#faq-inner');
+const imgFaqOpen = faqWrapper.querySelector('#faq-open'); 
+const imgFaqClose = faqWrapper.querySelector('#faq-close'); 
+
+faqBtn.addEventListener('click', () =>{
+   faqInner.classList.toggle('hide');
+   imgFaqClose.classList.toggle('hide');
+   imgFaqOpen.classList.toggle('hide');
+})
+})
