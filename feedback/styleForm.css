@@ -186,13 +186,6 @@ fieldset.hidden {
    pointer-events: none;
 }
 
-/* .dropdown_btn:after {
-   display: block;
-   width: 24px;
-   height: 24px;
-   transition: all .3s ease;
-} */
-
 /* Добавляемый класс при открытии */
 .open {
    border: 2px solid #0A84FF;
